@@ -1,9 +1,70 @@
+
+/*a) Change the width of the .containe*/
+/*c) Apply a media query to target the orientation of a device*/
+
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+  @media (orientation: potrait) {
+    background-color:  #ccc;
+    background-color: #eee;
+   }
 }
 
 .nav {
   display: block;
   justify-content: space-between;
 }
+
+/*b) Add a media query.  I did not see a float property for this code*/
+/*d)change the border color of the .column class to red*/
+
+@media (max-width:768px) {
+}
+ .column {
+    width: 80%;
+color: rgb(255,0,0);
+    
+ }
+
+/* d) target devices with a pixel density of 2 or higher */
+/* e) stack the navigation menu items vertically and adjust the font size maximum width of 768px*/
+
+
+ @media (-webkit-min-device-pixel-ratio: 2),
+     (min--moz-device-pixel-ratio: 2),
+     (-o-min-device-pixel-ratio: 2/1),
+     (min-device-pixel-ratio: 2),
+       (max-width:768px),
+       horizontal-viewport
+  
+    
+  
+  /* f) layout of the menu for all items responsive using CSS flexbox instead of grid */
+
+  .flex-container{
+    display: flex;   
+      }
+
+  .box{
+  height: 100px;
+  min-width: 100px;
+}
+.one{
+  background: #cccccc;
+}
+.two{
+  background: #eeeeee;
+}
+.three{
+  background: chocolate;
+}
+ 
+
+
+  
+
+
+ 
+
+
